@@ -29,28 +29,19 @@
  *                                                                          *
  ****************************************************************************/
 
-#define MINGW_HAS_SECURE_API 1
-
-# include <sys/stat.h>
-# include <fcntl.h>
-# include <time.h>
-# define xmalloc(S) malloc (S)
-
-#include <stdlib.h>
-#include <stdio.h>
-
 #ifdef __cplusplus
 extern "C" {
 #endif
 
-#include "env.h"
-#include <Windows.h>
+# include "env.h"
+# include <stdlib.h>
+# include <Windows.h>
 
 void
 __gnat_getenv (char *name, int *len, char **value)
 {
     DWORD MaxSize = 2048;
-    *value = xmalloc(2048);
+    *value = malloc(MaxSize);
     DWORD ActualSize = GetEnvironmentVariableA(name, *value, MaxSize);
     *len = ActualSize;
     return;
