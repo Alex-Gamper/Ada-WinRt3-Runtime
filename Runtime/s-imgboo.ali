@@ -1,0 +1,44 @@
+V "GNAT Lib v14"
+A -nostdinc
+A -O2
+A -gnatA
+A --RTS=C:\Ada\WinRt3-Runtime\
+A -mtune=corei7
+A -gnatp
+A -gnatg
+A -g
+A -march=nocona
+P ZX
+
+RN
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U system.img_bool%b	s-imgboo.adb		c032a46b NE OL PK
+W system%s		system.ads		system.ali
+
+U system.img_bool%s	s-imgboo.ads		bb648c50 NE OL PR PK
+W system%s		system.ads		system.ali
+W system.val_bool%s	s-valboo.adb		s-valboo.ali
+
+D system.ads		20230902023704 e4f8b086 system%s
+D s-imgboo.ads		20230902023704 1e4d84c3 system.img_bool%s
+D s-imgboo.adb		20230902023704 e4dffaee system.img_bool%b
+D s-valboo.ads		20230902023704 41d1b815 system.val_bool%s
+D s-valspe.ads		20230902023704 3aa0da46 system.val_spec%s
+G a e
+G c Z s b [image_boolean system__img_bool 51 14 none]
+X 1 system.ads
+37K9*System 194e11 2|45r6 47r9 59r17 60r17 65r5 3|40r6 42r14 61r13 66r13
+. 70r5
+X 2 s-imgboo.ads
+47K16*Img_Bool 1|37k9 2|65l12 65e20 3|42b21 70l12 70t20
+51U14*Image_Boolean 52>7 53=7 54<7 3|50b14 68l8 68t21
+52b7 V{boolean} 57r21 58r18 60r62 3|51b7 57r10
+53a7 S{string} 56r14 57r28 57r47 59r57 60r48 3|52b7 55r22 58m10 61r52 61r55
+. 61r64 63m10 66r52 66r55 66r64
+54i7 P{natural} 58r25 58r36 59r65 60r56 3|53b7 59m10 64m10
+X 4 s-valboo.ads
+45K16*Val_Bool 2|45w13 59r24 60r24 4|90e20
+81V13*Value_Boolean{boolean} 2|60s33
+

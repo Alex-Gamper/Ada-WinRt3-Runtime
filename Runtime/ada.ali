@@ -1,0 +1,24 @@
+V "GNAT Lib v14"
+A -nostdinc
+A -O2
+A -gnatA
+A --RTS=C:\Ada\WinRt3-Runtime\
+A -mtune=corei7
+A -gnatp
+A -gnatg
+A -g
+A -march=nocona
+P ZX
+
+RN
+RV NO_IMPLEMENTATION_PRAGMAS
+RR NO_ELABORATION_CODE
+
+U ada%s			ada.ads			76789da1 NE OL PU PK
+
+D ada.ads		20230902023704 76789da1 ada%s
+D system.ads		20230902023704 e4f8b086 system%s
+G a e
+X 1 ada.ads
+16K9*Ada 20l5 20e8
+

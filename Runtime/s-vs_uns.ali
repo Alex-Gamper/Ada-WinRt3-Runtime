@@ -1,0 +1,70 @@
+V "GNAT Lib v14"
+A -nostdinc
+A -O2
+A -gnatA
+A --RTS=C:\Ada\WinRt3-Runtime\
+A -mtune=corei7
+A -gnatp
+A -gnatg
+A -g
+A -march=nocona
+P ZX
+
+RN
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_EXCEPTIONS
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_ASPECT_SPECIFICATIONS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_ELABORATION_CODE
+
+U system.vs_uns%s	s-vs_uns.ads		1f4a2532 EE OL PR
+W system%s		system.ads		system.ali
+W system.unsigned_types%s  s-unstyp.ads		s-unstyp.ali
+
+D system.ads		20230902023704 e4f8b086 system%s
+D s-unstyp.ads		20230902023704 fa2a7f59 system.unsigned_types%s
+D s-valspe.ads		20230902023704 3aa0da46 system.val_spec%s
+D s-vauspe.ads		20230902023704 e66c90ca system.value_u_spec%s
+D s-vauspe.adb		20230902023704 8524adb4 system.value_u_spec%b
+D s-vs_uns.ads		20230902023704 e7f47a27 system.vs_uns%s
+G a e
+G c Z s s [max_log10 system__vs_uns__spec 61 13 55_4]
+G c Z s s [wrap_option system__vs_uns__spec 80 13 55_4]
+G c Z s s [only_decimal_ghost system__vs_uns__spec 83 13 55_4]
+G c Z s s [only_hexa_ghost system__vs_uns__spec 94 13 55_4]
+G c Z s s [last_hexa_ghost system__vs_uns__spec 103 13 55_4]
+G c Z s s [is_based_format_ghost system__vs_uns__spec 116 13 55_4]
+G c Z s s [hexa_to_unsigned_ghost system__vs_uns__spec 131 13 55_4]
+G c Z s s [scan_overflows_ghost system__vs_uns__spec 142 13 55_4]
+G c Z s s [scan_based_number_ghost system__vs_uns__spec 154 13 55_4]
+G c Z s s [lemma_scan_based_number_ghost_base system__vs_uns__spec 171 14 55_4]
+G c Z s s [lemma_scan_based_number_ghost_underscore system__vs_uns__spec 188 14 55_4]
+G c Z s s [lemma_scan_based_number_ghost_overflow system__vs_uns__spec 205 14 55_4]
+G c Z s s [lemma_scan_based_number_ghost_step system__vs_uns__spec 225 14 55_4]
+G c Z s s [exponent_unsigned_ghost system__vs_uns__spec 247 13 55_4]
+G c Z s s [lemma_exponent_unsigned_ghost_base system__vs_uns__spec 257 14 55_4]
+G c Z s s [lemma_exponent_unsigned_ghost_overflow system__vs_uns__spec 268 14 55_4]
+G c Z s s [lemma_exponent_unsigned_ghost_step system__vs_uns__spec 280 14 55_4]
+G c Z s s [raw_unsigned_starts_as_based_ghost system__vs_uns__spec 293 13 55_4]
+G c Z s s [raw_unsigned_is_based_ghost system__vs_uns__spec 307 13 55_4]
+G c Z s s [is_raw_unsigned_format_ghost system__vs_uns__spec 323 13 55_4]
+G c Z s s [scan_split_no_overflow_ghost system__vs_uns__spec 359 13 55_4]
+G c Z s s [scan_split_value_ghost system__vs_uns__spec 404 13 55_4]
+G c Z s s [raw_unsigned_no_overflow_ghost system__vs_uns__spec 450 13 55_4]
+G c Z s s [scan_raw_unsigned_ghost system__vs_uns__spec 473 13 55_4]
+G c Z s s [raw_unsigned_last_ghost system__vs_uns__spec 491 13 55_4]
+G c Z s s [slide_to_1 system__vs_uns__spec 524 13 55_4]
+G c Z s s [slide_if_necessary system__vs_uns__spec 532 13 55_4]
+G c Z s s [is_unsigned_ghost system__vs_uns__spec 536 13 55_4]
+G c Z s s [is_value_unsigned_ghost system__vs_uns__spec 555 13 55_4]
+G c Z s s [prove_scan_based_number_ghost_eq system__vs_uns__spec 570 14 55_4]
+G c Z s s [prove_scan_only_decimal_ghost system__vs_uns__spec 591 14 55_4]
+X 1 system.ads
+37K9*System 194e11 6|47r6 48r6 50r9 55r24 57r5
+X 2 s-unstyp.ads
+38K16*Unsigned_Types 249e26 6|47w13 53r24
+44M9*Unsigned 6|53r39
+

@@ -1,0 +1,34 @@
+V "GNAT Lib v14"
+A -nostdinc
+A -O2
+A -gnatA
+A --RTS=C:\Ada\WinRt3-Runtime\
+A -mtune=corei7
+A -gnatp
+A -gnatg
+A -g
+A -march=nocona
+P ZX
+
+RN
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U io_exceptions%s	ioexcept.ads		b112f451 NE OL PU
+W ada%s			ada.ads			ada.ali
+W ada.io_exceptions%s	a-ioexce.ads		a-ioexce.ali
+
+D ada.ads		20230902023704 76789da1 ada%s
+D a-ioexce.ads		20230902023704 40018c65 ada.io_exceptions%s
+D a-unccon.ads		20230902023704 0e9b276f ada.unchecked_conversion%s
+D ioexcept.ads		20230902023704 f1137834 io_exceptions%s
+D system.ads		20230902023704 e4f8b086 system%s
+D s-exctab.ads		20230902023704 91bef6ef system.exception_table%s
+D s-stalib.ads		20230902023704 1c9580f6 system.standard_library%s
+G a e
+X 1 ada.ads
+16K9*Ada 20e8 4|22r6 24r31
+X 2 a-ioexce.ads
+16K13*IO_Exceptions 28e22 4|22w10 24r35
+X 4 ioexcept.ads
+24K9*IO_Exceptions=24:35
+

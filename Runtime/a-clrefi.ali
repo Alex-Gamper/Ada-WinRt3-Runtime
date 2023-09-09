@@ -1,0 +1,42 @@
+V "GNAT Lib v14"
+A -nostdinc
+A -O2
+A -gnatA
+A --RTS=C:\Ada\WinRt3-Runtime\
+A -mtune=corei7
+A -gnatp
+A -gnatg
+A -g
+A -march=nocona
+P ZX
+
+RN
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U ada.command_line.response_file%s  a-clrefi.ads  285cbdd1 NE OL
+W ada.command_line%s	a-comlin.adb		a-comlin.ali
+W system%s		system.ads		system.ali
+W system.response_file%s  s-resfil.adb		s-resfil.ali
+
+D ada.ads		20230902023704 76789da1 ada%s
+D a-comlin.ads		20230902023704 4aa66568 ada.command_line%s
+D a-clrefi.ads		20230902023704 845769fd ada.command_line.response_file%s
+D a-unccon.ads		20230902023704 0e9b276f ada.unchecked_conversion%s
+D a-uncdea.ads		20230902023704 c3a8ac65 ada.unchecked_deallocation%s
+D system.ads		20230902023704 e4f8b086 system%s
+D s-exctab.ads		20230902023704 91bef6ef system.exception_table%s
+D s-resfil.ads		20230902023704 e6adb144 system.response_file%s
+D s-stalib.ads		20230902023704 1c9580f6 system.standard_library%s
+D s-string.ads		20230902023704 582aac7d system.strings%s
+G a e
+X 1 ada.ads
+16K9*Ada 20e8 3|35r9
+X 2 a-comlin.ads
+36K13*Command_Line 1|16k9 2|144e21 3|35r13
+X 3 a-clrefi.ads
+35K26*Response_File=35:55
+X 6 system.ads
+37K9*System 3|34r6 35r48 6|194e11
+X 8 s-resfil.ads
+43K16*Response_File 3|34w13 35r55 8|100e25
+

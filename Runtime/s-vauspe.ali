@@ -1,0 +1,35 @@
+V "GNAT Lib v14"
+A -nostdinc
+A -O2
+A -gnatA
+A --RTS=C:\Ada\WinRt3-Runtime\
+A -mtune=corei7
+A -gnatp
+A -gnatg
+A -g
+A -march=nocona
+P ZX
+
+RN
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_EXCEPTIONS
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_ASPECT_SPECIFICATIONS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_ELABORATION_CODE
+
+U system.value_u_spec%b	s-vauspe.adb		63483d7e OL
+W system%s		system.ads		system.ali
+
+U system.value_u_spec%s	s-vauspe.ads		3834fa0a BN EE OL PR
+W system%s		system.ads		system.ali
+
+D system.ads		20230902023704 e4f8b086 system%s
+D s-valspe.ads		20230902023704 3aa0da46 system.val_spec%s
+D s-vauspe.ads		20230902023704 e66c90ca system.value_u_spec%s
+D s-vauspe.adb		20230902023704 8524adb4 system.value_u_spec%b
+G a e
+G c Z s b [value_u_spec system 53 16 none]
+X 1 system.ads
+37K9*System 194e11 3|47r6 47r27 53r9 624r5 4|38r14 203r5
+

@@ -1,0 +1,251 @@
+V "GNAT Lib v14"
+A -nostdinc
+A -O2
+A -gnatA
+A --RTS=C:\Ada\WinRt3-Runtime\
+A -mtune=corei7
+A -gnatp
+A -gnatg
+A -g
+A -march=nocona
+P SS ZX
+
+RN
+RV NO_DISPATCH
+RV NO_DISPATCHING_CALLS
+RV NO_LONG_LONG_INTEGERS
+RV NO_RECURSION
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_UNCHECKED_CONVERSION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U system.put_images%b	s-putima.adb		c80780c9 NE OL PK
+W ada%s			ada.ads			ada.ali
+W ada.strings%s		a-string.ads		a-string.ali
+W ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+W ada.strings.text_buffers.utils%s  a-stbuut.adb  a-stbuut.ali
+W ada.unchecked_conversion%s
+Z system%s		system.ads		system.ali
+
+U system.put_images%s	s-putima.ads		f856b799 NE OL PR PU PK
+W ada%s			ada.ads			ada.ali
+W ada.strings%s		a-string.ads		a-string.ali
+W ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+W system%s		system.ads		system.ali
+W system.unsigned_types%s  s-unstyp.ads		s-unstyp.ali
+
+D ada.ads		20230902023704 76789da1 ada%s
+D a-except.ads		20230902023704 e7970cd9 ada.exceptions%s
+D a-string.ads		20230902023704 90ac6797 ada.strings%s
+D a-sttebu.ads		20230902023704 f1ad67a2 ada.strings.text_buffers%s
+D a-stbuut.ads		20230902023704 69caae97 ada.strings.text_buffers.utils%s
+D a-stuten.ads		20230902023704 c6ced0ae ada.strings.utf_encoding%s
+D a-suezst.ads		20230902023704 1161e3f6 ada.strings.utf_encoding.wide_wide_strings%s
+D a-tags.ads		20230902023704 9eaa38c6 ada.tags%s
+D a-unccon.ads		20230902023704 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20230902023704 9111f9c1 interfaces%s
+D system.ads		20230902023704 e4f8b086 system%s
+D s-exctab.ads		20230902023704 91bef6ef system.exception_table%s
+D s-parame.ads		20230902023704 3597fc11 system.parameters%s
+D s-putima.ads		20230902023704 17291fe4 system.put_images%s
+D s-putima.adb		20230902023704 b87f16d5 system.put_images%b
+D s-secsta.ads		20230902023704 578279f5 system.secondary_stack%s
+D s-soflin.ads		20230902023704 df77073e system.soft_links%s
+D s-stache.ads		20230902023704 0b81c1fe system.stack_checking%s
+D s-stalib.ads		20230902023704 1c9580f6 system.standard_library%s
+D s-stoele.ads		20230902023704 ccded4e8 system.storage_elements%s
+D s-traent.ads		20230902023704 c81cbf8c system.traceback_entries%s
+D s-unstyp.ads		20230902023704 fa2a7f59 system.unsigned_types%s
+G a e
+G c Z s b [put_image_integer system__put_images 55 14 none]
+G c Z s b [put_image_long_long_integer system__put_images 56 14 none]
+G c Z s b [put_image_long_long_long_integer system__put_images 58 14 none]
+G c Z s b [put_image_unsigned system__put_images 65 14 none]
+G c Z s b [put_image_long_long_unsigned system__put_images 66 14 none]
+G c Z s b [put_image_long_long_long_unsigned system__put_images 68 14 none]
+G c Z s b [put_image_thin_pointer system__put_images 75 14 none]
+G c Z s b [put_image_fat_pointer system__put_images 76 14 none]
+G c Z s b [put_image_access_subp system__put_images 80 14 none]
+G c Z s b [put_image_access_prot_subp system__put_images 83 14 none]
+G c Z s b [put_image_string system__put_images 87 14 none]
+G c Z s b [put_image_wide_string system__put_images 92 14 none]
+G c Z s b [put_image_wide_wide_string system__put_images 97 14 none]
+G c Z s b [array_before system__put_images 102 14 none]
+G c Z s b [array_between system__put_images 103 14 none]
+G c Z s b [array_after system__put_images 104 14 none]
+G c Z s b [simple_array_between system__put_images 106 14 none]
+G c Z s b [record_before system__put_images 110 14 none]
+G c Z s b [record_between system__put_images 111 14 none]
+G c Z s b [record_after system__put_images 112 14 none]
+G c Z s b [put_arrow system__put_images 114 14 none]
+G c Z s b [put_image_unknown system__put_images 116 14 none]
+G c Z s s [byte_stringIP system__put_images 72 9 none]
+G c Z b b [put_image system__put_images__integer_images 46 17 96_4]
+G c Z b b [put_image system__put_images__integer_images 47 17 96_4]
+G c Z b b [digit_to_character system__put_images__integer_images 56 16 96_4]
+G c Z b b [put_digits system__put_images__integer_images 59 17 96_4]
+G c Z b b [put_image system__put_images__ll_integer_images 46 17 98_4]
+G c Z b b [put_image system__put_images__ll_integer_images 47 17 98_4]
+G c Z b b [digit_to_character system__put_images__ll_integer_images 56 16 98_4]
+G c Z b b [put_digits system__put_images__ll_integer_images 59 17 98_4]
+G c Z b b [put_image system__put_images__lll_integer_images 46 17 100_4]
+G c Z b b [put_image system__put_images__lll_integer_images 47 17 100_4]
+G c Z b b [digit_to_character system__put_images__lll_integer_images 56 16 100_4]
+G c Z b b [put_digits system__put_images__lll_integer_images 59 17 100_4]
+G c Z b b [put_image system__put_images__hex 46 17 123_4]
+G c Z b b [put_image system__put_images__hex 47 17 123_4]
+G c Z b b [digit_to_character system__put_images__hex 56 16 123_4]
+G c Z b b [put_digits system__put_images__hex 59 17 123_4]
+G c Z b b [thin_instanceR system__put_images__thin_instanceGP6496 148 14 none]
+G c Z b b [thin_instance system__put_images 148 14 none]
+G c Z b b [fat_instanceR system__put_images__fat_instanceGP6738 156 14 none]
+G c Z b b [fat_instance system__put_images 156 14 none]
+X 1 ada.ads
+16K9*Ada 20e8 14|32r6 53r20 15|32r6 33r5 34r5 35r6 135r28
+X 3 a-string.ads
+16K13*Strings 35e16 14|32r10 53r24 15|32r10 33r9 34r9
+X 4 a-sttebu.ads
+17K21*Text_Buffers 152e29 14|32w18 53r32 15|32r18 33r17 34r17
+26H9*Root_Buffer_Type 104e14 14|53r45
+29x14*Put 15|295R7
+37x14*Put_UTF_8 15|139R10 141R10 142R10 144R10 182R10 187R13 193R10 203R10
+. 208R13 214R10 224R10 229R13 235R10 289R7 294R7 296R7
+45x14*New_Line 15|241R7 249R7 262R10 270R7 278R7
+52U14*Increase_Indent 15|243R7 272R7
+58U14*Decrease_Indent 15|254R7 283R7
+X 5 a-stbuut.ads
+34K34*Utils 82e35 15|32w31 34r30
+42U14*Put_7bit 15|66s13 68s13 78s13 81s13 90s10 242s7 248s7 255s7 260s7 264s10
+. 271s7 277s7 284s7
+44U14*Put_Character 15|189s10
+46U14*Put_Wide_Character 15|210s10
+48U14*Put_Wide_Wide_Character 15|231s10
+52V13*Column{positive} 15|261s10
+X 9 a-unccon.ads
+20v14*Unchecked_Conversion 15|35w10 135r32
+X 11 system.ads
+37K9*System 194e11 14|33r6 35r9 120r5 15|37r14 136r10 299r5
+67M9*Address 15|136r17
+73N4*Memory_Size 15|121r34 121r53 122r33
+81V14*"="{boolean} 15|44r40
+X 14 s-putima.ads
+35K16*Put_Images 11|37k9 14|120l12 120e22 15|37b21 299l12 299t22
+53H12*Sink{4|26R9} 55r44 57r18 59r18 65r45 67r18 69r18 75r49 76r48 80r48
+. 84r18 88r32 93r32 98r32 102r39 103r40 104r38 106r47 110r40 111r41 112r39
+. 114r36 116r44 15|46r39 47r39 59r40 62r40 72r39 88r39 103r44 106r18 109r18
+. 112r45 115r18 118r18 130r18 133r18 150r18 158r18 164r48 170r18 177r32 198r32
+. 219r32 239r39 246r40 252r38 258r47 268r40 275r41 281r39 287r36 292r44
+55U14*Put_Image_Integer 55=33 55>56 15|103b14
+55c33 S<4|26R9> 15|103b33
+55i56 X{integer} 15|103b56
+56U14*Put_Image_Long_Long_Integer 57=7 57>30 15|105b14
+57c7 S<4|26R9> 15|106b7
+57i30 X{long_long_integer} 15|106b30
+58U14*Put_Image_Long_Long_Long_Integer 59=7 59>30 15|108b14
+59c7 S<4|26R9> 15|109b7
+59i30 X{long_long_long_integer} 15|109b30
+61M12*Unsigned{22|44M9} 65r61 15|97r16 112r61
+62M12*Long_Long_Unsigned{22|46M9} 67r34 15|99r26 115r34
+63M12*Long_Long_Long_Unsigned{22|47M9} 69r34 15|101r31 118r34
+65U14*Put_Image_Unsigned 65=34 65>57 15|112b14
+65c34 S<4|26R9> 15|112b34
+65m57 X{61M12} 15|112b57
+66U14*Put_Image_Long_Long_Unsigned 67=7 67>30 15|114b14
+67c7 S<4|26R9> 15|115b7
+67m30 X{62M12} 15|115b30
+68U14*Put_Image_Long_Long_Long_Unsigned 69=7 69>30 15|117b14
+69c7 S<4|26R9> 15|118b7
+69m30 X{63M12} 15|118b30
+71E9*Byte<character> 72r53 73r36 15|148r54
+72A9*Byte_String(71E9)<integer> 74r35 15|156r53
+73P9*Thin_Pointer(71E9) 75r65 80r64 84r34 15|148r60 150r34 164r64 170r34
+74P9*Fat_Pointer(72A9) 76r64 15|156r66 158r34
+75U14*Put_Image_Thin_Pointer 75=38 75>61 15|149b14 154l8 154t30
+75c38 S<4|26R9> 15|150b7 153m22
+75p61 X{73P9} 15|150b30 153r25
+76U14*Put_Image_Fat_Pointer 76=37 76>60 15|157b14 162l8 162t29
+76c37 S<4|26R9> 15|158b7 161m21
+76p60 X{74P9} 15|158b30 161r24
+80U14*Put_Image_Access_Subp 80=37 80>60 15|164b14 167l8 167t29
+80c37 S<4|26R9> 15|164b37 166m22
+80p60 X{73P9} 15|164b60 166r25
+83U14*Put_Image_Access_Prot_Subp 84=7 84>30 15|169b14 174l8 174t34
+84c7 S<4|26R9> 15|170b7 173m22
+84p30 X{73P9} 15|170b30 173r25
+87U14*Put_Image_String 88=7 89>7 90>7 15|176b14 195l8 195t24
+88c7 S<4|26R9> 15|177b7 182m21 187m24 189m25 193m21
+89a7 X{string} 15|178b7 185r16
+90b7 With_Delimiters{boolean} 15|179b7 181r10 186r30 192r10
+92U14*Put_Image_Wide_String 93=7 94>7 95>7 15|197b14 216l8 216t29
+93c7 S<4|26R9> 15|198b7 203m21 208m24 210m30 214m21
+94a7 X{wide_string} 15|199b7 206r16
+95b7 With_Delimiters{boolean} 15|200b7 202r10 207r30 213r10
+97U14*Put_Image_Wide_Wide_String 98=7 99>7 100>7 15|218b14 237l8 237t34
+98c7 S<4|26R9> 15|219b7 224m21 229m24 231m35 235m21
+99a7 X{wide_wide_string} 15|220b7 227r16
+100b7 With_Delimiters{boolean} 15|221b7 223r10 228r30 234r10
+102U14*Array_Before 102=28 15|239b14 244l8 244t20
+102c28 S<4|26R9> 15|239b28 241m17 242m17 243m24
+103U14*Array_Between 103=29 15|246b14 250l8 250t21
+103c29 S<4|26R9> 15|246b29 248m17 249m17
+104U14*Array_After 104=27 15|252b14 256l8 256t19
+104c27 S<4|26R9> 15|252b27 254m24 255m17
+106U14*Simple_Array_Between 106=36 15|258b14 266l8 266t28
+106c36 S<4|26R9> 15|258b36 260m17 261r18 262m20 264m20
+110U14*Record_Before 110=29 15|268b14 273l8 273t21
+110c29 S<4|26R9> 15|268b29 270m17 271m17 272m24
+111U14*Record_Between 111=30 15|275b14 279l8 279t22
+111c30 S<4|26R9> 15|275b30 277m17 278m17
+112U14*Record_After 112=28 15|281b14 285l8 285t20
+112c28 S<4|26R9> 15|281b28 283m24 284m17
+114U14*Put_Arrow 114=25 15|287b14 290l8 290t17
+114c25 S<4|26R9> 15|287b25 289m18
+116U14*Put_Image_Unknown 116=33 116>56 15|292b14 297l8 297t25
+116c33 S<4|26R9> 15|292b33 294m18 295m12 296m18
+116a56 Type_Name{string} 15|292b56 295r15
+X 15 s-putima.adb
+40I12 Integer_Type 44r22 46r55 72r55
+41M12 Unsigned_Type 42r14 44r42 47r55 49r24 59r56 62r56 79r28 82r29 88r55
+42*7 Base{41M12} 45r22 49r49 64r18 65r32 66r52 97r26 99r46 101r56 124r41
+43k12 Generic_Integer_Images 40z12 41z12 42z7 49E15 50l8 50e30 52b17 94l8
+. 94t30 96r34 98r37 100r38 123r23
+46U17*Put_Image 46=28 46>51 72b17 86l11 86t20 104r29[96] 107r32[98] 110r33[100]
+46c28 S<4|26R9> 72b28 78m23 79m25 81m23 82m25
+46*51 X{40I12} 72b51 77r13 79r43 82r48
+47U17*Put_Image 47=28 47>51 88b17 92l11 92t20 113r29[96] 116r32[98] 119r33[100]
+. 143s14[123]
+47c28 S<4|26R9> 88b28 90m20 91m22
+47*51 X{41M12} 88b51 91r25
+49M15 Digit{41M12} 56r40
+54N7 A 57r55
+55N7 Z 57r44
+56V16 Digit_To_Character{character} 56>36 66s26 68s26
+56*36 X{49M15} 57r28 57r40 57r51
+59U17 Put_Digits 59=29 59>52 62b17 65s13 70l11 70t21 79s13 82s13 91s10
+59c29 S<4|26R9> 62b29 65m25 66m23 68m23
+59*52 X{41M12} 62b52 64r13 65r28 66r46 68r46
+96K12 Integer_Images[43] 104r14 113r14
+98K12 LL_Integer_Images[43] 107r14 116r14
+100K12 LLL_Integer_Images[43] 110r14 119r14
+121I9 Signed_Address<long_long_integer> 124r7
+122M9 Unsigned_Address 124r23 136r26
+123K12 Hex[43] 143r10
+127+12 Designated 128r34
+128P12 Pointer(127+12) 130r34 133r34
+129u14 Put_Image_Pointer 130=7 130>30 130>43 132b14 146l8 146t25 148r35 156r34
+130c7 S<4|26R9> 133b7 139m21 141m21 142m21 143m25 144m21
+130*30 X{128P12} 133b30 138r10 143r34
+130a43 Type_Kind{string} 133b43 142r24
+135V16 Cast[9|20]{122M9} 143s28
+148U14 Thin_Instance[129] 132b14 153s7 166s7 173s7
+156U14 Fat_Instance[129] 132b14 161s7
+185e11 C=185:16{character} 186r13 189r28
+206e11 C=206:16{wide_character} 207r13 210r33
+227e11 C=227:16{wide_wide_character} 228r13 231r38
+X 22 s-unstyp.ads
+38K16*Unsigned_Types 14|33w13 61r24 62r34 63r39 22|249e26
+44M9*Unsigned 14|61r39
+46M9*Long_Long_Unsigned 14|62r49
+47M9*Long_Long_Long_Unsigned 14|63r54
+

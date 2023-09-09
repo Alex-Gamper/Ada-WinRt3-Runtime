@@ -1,0 +1,26 @@
+V "GNAT Lib v14"
+A -nostdinc
+A -O2
+A -gnatA
+A --RTS=C:\Ada\WinRt3-Runtime\
+A -mtune=corei7
+A -gnatp
+A -gnatg
+A -g
+A -march=nocona
+P ZX
+
+RN
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U system.spark%s	s-spark.ads		b709731b NE OL PU PK
+W system%s		system.ads		system.ali
+
+D system.ads		20230902023704 e4f8b086 system%s
+D s-spark.ads		20230902023704 53f1c39d system.spark%s
+G a e
+X 1 system.ads
+37K9*System 194e11 2|32r9 36r5
+X 2 s-spark.ads
+32K16*SPARK 1|37k9 2|36l12 36e17
+

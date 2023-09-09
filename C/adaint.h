@@ -33,6 +33,9 @@
 extern "C" {
 #endif
 
+extern unsigned int __gnat_current_codepage;
+extern unsigned int __gnat_current_ccs_encoding;
+
 #include <sys/stat.h>
 #include <stdio.h>
 #include "dirent.h"

@@ -95,11 +95,10 @@ int __gnat_in_child_after_fork = 0;
 #define IS_DIRECTORY_SEPARATOR(c) ((c) == '/' || (c) == DIR_SEPARATOR)
 #endif
 
-//#define GNAT_UNICODE_SUPPORT
-#ifdef GNAT_UNICODE_SUPPORT
+UINT __gnat_current_codepage;
+UINT __gnat_current_ccs_encoding;
 
-extern UINT __gnat_current_codepage;
-extern UINT __gnat_current_ccs_encoding;
+#ifdef GNAT_UNICODE_SUPPORT
 
 /*  Macros to convert to/from the code page specified in
     __gnat_current_codepage.  */

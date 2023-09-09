@@ -1,0 +1,31 @@
+V "GNAT Lib v14"
+A -nostdinc
+A -O2
+A -gnatA
+A --RTS=C:\Ada\WinRt3-Runtime\
+A -mtune=corei7
+A -gnatp
+A -gnatg
+A -g
+A -march=nocona
+P ZX
+
+RN
+RV NO_FLOATING_POINT
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U system.powten_flt%s	s-powflt.ads		41e2093e NE OL PU PK
+W system%s		system.ads		system.ali
+
+D system.ads		20230902023704 e4f8b086 system%s
+D s-powflt.ads		20230902023704 a51ab9b8 system.powten_flt%s
+G a e
+X 1 system.ads
+37K9*System 194e11 2|34r9 91r5
+X 2 s-powflt.ads
+34K16*Powten_Flt 1|37k9 2|91l12 91e22
+37N4*Maxpow_Exact 42r25
+42N4*Maxpow 45r35 68r34
+45a4*Powfive(float)
+68a4*Powten(float)
+
