@@ -1,12 +1,12 @@
 /****************************************************************************
  *                                                                          *
- *                 GNAT RUN-TIME LIBRARY (GNARL) COMPONENTS                 *
+ *                         GNAT COMPILER COMPONENTS                         *
  *                                                                          *
- *                                E R R N O                                 *
+ *                                R A I S E                                 *
  *                                                                          *
  *                          C Implementation File                           *
  *                                                                          *
- *           Copyright (C) 1992-2023, Free Software Foundation, Inc.        *
+ *             Copyright (C) 1992-2023, Free Software Foundation, Inc.      *
  *                                                                          *
  * GNAT is free software;  you can  redistribute it  and/or modify it under *
  * terms of the  GNU General Public License as published  by the Free Soft- *
@@ -29,18 +29,29 @@
  *                                                                          *
  ****************************************************************************/
 
-/* This file provides access to the C-language errno to the Ada interface
-   for POSIX.  It is not possible in general to import errno, even in
-   Ada compilers that allow (as GNAT does) the importation of variables,
-   as it may be defined using a macro.
-*/
+/* Shared routines to support exception handling.  __gnat_unhandled_terminate
+   is shared between all exception handling mechanisms.  */
 
-#define _THREAD_SAFE
+#include "adaint.h"
+#include "raise.h"
 
-#include <errno.h>
+#ifdef __cplusplus
+extern "C" {
+#endif
 
-int
-__get_errno(void)
+/* When an exception is raised for which no handler exists, the procedure
+   Ada.Exceptions.Unhandled_Exception is called, which performs the call to
+   adafinal to complete finalization, and then prints out the error messages
+   for the unhandled exception. The final step is to call this routine, which
+   performs any system dependent cleanup required.  */
+
+void
+__gnat_unhandled_terminate (void)
 {
-  return errno;
+  /* Default termination handling */
+  __gnat_os_exit (1);
 }
+
+#ifdef __cplusplus
+}
+#endif

@@ -1,12 +1,12 @@
 /****************************************************************************
  *                                                                          *
- *                 GNAT RUN-TIME LIBRARY (GNARL) COMPONENTS                 *
+ *                         GNAT COMPILER COMPONENTS                         *
  *                                                                          *
- *                                E R R N O                                 *
+ *                              P T H R E A D                               *
  *                                                                          *
  *                          C Implementation File                           *
  *                                                                          *
- *           Copyright (C) 1992-2023, Free Software Foundation, Inc.        *
+ *          Copyright (C) 2011-2023, Free Software Foundation, Inc.         *
  *                                                                          *
  * GNAT is free software;  you can  redistribute it  and/or modify it under *
  * terms of the  GNU General Public License as published  by the Free Soft- *
@@ -29,18 +29,13 @@
  *                                                                          *
  ****************************************************************************/
 
-/* This file provides access to the C-language errno to the Ada interface
-   for POSIX.  It is not possible in general to import errno, even in
-   Ada compilers that allow (as GNAT does) the importation of variables,
-   as it may be defined using a macro.
-*/
-
-#define _THREAD_SAFE
-
-#include <errno.h>
+int
+__gnat_pthread_condattr_setup (void *attr) {
+  return 0;
+}
 
 int
-__get_errno(void)
+__gnat_clock_get_res (void)
 {
-  return errno;
+  return 0;
 }

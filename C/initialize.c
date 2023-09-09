@@ -1,12 +1,12 @@
 /****************************************************************************
  *                                                                          *
- *                 GNAT RUN-TIME LIBRARY (GNARL) COMPONENTS                 *
+ *                         GNAT COMPILER COMPONENTS                         *
  *                                                                          *
- *                                E R R N O                                 *
+ *                           I N I T I A L I Z E                            *
  *                                                                          *
  *                          C Implementation File                           *
  *                                                                          *
- *           Copyright (C) 1992-2023, Free Software Foundation, Inc.        *
+ *          Copyright (C) 1992-2023, Free Software Foundation, Inc.         *
  *                                                                          *
  * GNAT is free software;  you can  redistribute it  and/or modify it under *
  * terms of the  GNU General Public License as published  by the Free Soft- *
@@ -29,18 +29,31 @@
  *                                                                          *
  ****************************************************************************/
 
-/* This file provides access to the C-language errno to the Ada interface
-   for POSIX.  It is not possible in general to import errno, even in
-   Ada compilers that allow (as GNAT does) the importation of variables,
-   as it may be defined using a macro.
-*/
+/*  This unit provides the default implementation of __gnat_initialize, which
+    is called before the elaboration of the partition.  It is provided in a
+    separate file so that users can replace it easily.  But the implementation
+    should be empty on most targets.  */
 
-#define _THREAD_SAFE
+#include "raise.h"
 
-#include <errno.h>
+#ifdef __cplusplus
+extern "C" {
+#endif
 
-int
-__get_errno(void)
+/******************************************/
+/* __gnat_initialize (NT-mingw32 Version) */
+/******************************************/
+
+extern void __gnat_install_SEH_handler (void *);
+
+void
+__gnat_initialize (void *eh)
 {
-  return errno;
+   /* Install the Structured Exception handler.  */
+   if (eh)
+     __gnat_install_SEH_handler (eh);
 }
+
+#ifdef __cplusplus
+}
+#endif

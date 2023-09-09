@@ -1,12 +1,12 @@
 /****************************************************************************
  *                                                                          *
- *                 GNAT RUN-TIME LIBRARY (GNARL) COMPONENTS                 *
+ *                         GNAT COMPILER COMPONENTS                         *
  *                                                                          *
- *                                E R R N O                                 *
+ *                                R A I S E                                 *
  *                                                                          *
- *                          C Implementation File                           *
+ *                              C Header File                               *
  *                                                                          *
- *           Copyright (C) 1992-2023, Free Software Foundation, Inc.        *
+ *          Copyright (C) 1992-2023, Free Software Foundation, Inc.         *
  *                                                                          *
  * GNAT is free software;  you can  redistribute it  and/or modify it under *
  * terms of the  GNU General Public License as published  by the Free Soft- *
@@ -29,18 +29,41 @@
  *                                                                          *
  ****************************************************************************/
 
-/* This file provides access to the C-language errno to the Ada interface
-   for POSIX.  It is not possible in general to import errno, even in
-   Ada compilers that allow (as GNAT does) the importation of variables,
-   as it may be defined using a macro.
-*/
+#ifdef __cplusplus
+extern "C" {
+#endif
 
-#define _THREAD_SAFE
+/* C counterparts of what System.Standard_Library defines.  */
 
-#include <errno.h>
-
-int
-__get_errno(void)
+struct Exception_Data
 {
-  return errno;
+  char Not_Handled_By_Others;
+  char Lang;
+  int Name_Length;
+  char *Full_Name;
+  void *HTable_Ptr;
+  char *Foreign_Data;
+  void (*Raise_Hook)(void);
+};
+
+typedef struct Exception_Data *Exception_Id;
+
+struct Exception_Occurrence;
+
+extern void __gnat_unhandled_terminate	(void);
+extern void *__gnat_malloc		(__SIZE_TYPE__);
+extern void __gnat_free			(void *);
+extern void *__gnat_realloc		(void *, __SIZE_TYPE__);
+extern void __gnat_finalize		(void);
+extern void __gnat_set_globals		(void);
+extern void __gnat_initialize		(void *);
+extern void __gnat_init_float		(void);
+extern void __gnat_install_handler	(void);
+extern void __gnat_install_SEH_handler  (void *);
+extern void __gnat_adjust_context_for_raise (int, void *);
+
+extern int gnat_exit_status;
+
+#ifdef __cplusplus
 }
+#endif
